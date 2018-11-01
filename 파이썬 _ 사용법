@@ -5,3 +5,6 @@
 변수나 함수명에 특별한 의미 또는 기능을 부여하고자 할 때
 국제화(Internationalization, i18n)/지역화(Localization, l10n) 함수로써 사용할 때
 숫자 리터럴값의 자릿수 구분을 위한 구분자로써 사용할 때
+
+참고 : https://mingrammer.com/underscore-in-python/
+
