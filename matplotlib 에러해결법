@@ -1,0 +1,6 @@
+터미널에서 아래와 같이 실행하면 대부분해결
+
+해결법
+
+pip3 uninstall matplotlib
+pip3 install matplotlib  -I
