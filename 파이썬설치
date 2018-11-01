@@ -1,0 +1,18 @@
+0. 설치참고
+
+https://m.blog.naver.com/PostView.nhn?blogId=dsz08082&logNo=221183943310&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F
+
+1.
+https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86_64.exe
+2. Anaconda Prompt 관리자모드로 실행
+3. 명령어실행
+python -m pip install --upgrade pip
+conda create -n tensorflow python=3.5
+activate tensorflow
+pip install tensorflow
+python -m pip install --upgrade pip
+>>정상설치되었는지확인
+python 진입
+import tensorflow as tf
+4. 명령어실행
+conda install nb_conda
