@@ -1,0 +1,19 @@
+0.설치참고
+http://webnautes.tistory.com/1173
+
+https://www.jetbrains.com/pycharm/download/#section=windows
+
+
+
+0. 파이참 텐서플로우 환경 설정하기
+
+https://steemkr.com/kr-dev/@maanya/3ajlbo
+
+프로젝트 생성 위치
+인터프리터 설정 펼치기
+현재 존재하는 인터프리터 선택 옵션
+인터프리터 경로 찾기
+Conda(아나콘다) 환경 선택
+위에서 만들었던 가상환경의 폴더를 찾아가서 python.exe 선택
+확인
+생성
