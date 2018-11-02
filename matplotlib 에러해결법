@@ -1,3 +1,5 @@
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xa
+
 터미널에서 아래와 같이 실행하면 대부분해결
 
 해결법
