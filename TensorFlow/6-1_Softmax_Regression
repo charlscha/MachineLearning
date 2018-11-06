@@ -1,0 +1,11 @@
+
+Logistic regression
+
+#linear를 0~1사이 출력값으로 나타내게끔 즉 같은 데이터들의 선을 긋는거와같음
+
+x->[  ] -> [  ] ->     Y예측{0~1}
+     w       s(sigmoid)
+     
+     
+Multinomial classification
+#그림참고 Multinomial classification
