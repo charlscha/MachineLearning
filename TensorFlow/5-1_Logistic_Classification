@@ -5,7 +5,7 @@ Facebook feed : show or hide
 Credit Card Fradulent Transaction detection : legitimate / fraud 신용카드 사용패턴
 
 linear regression 출력값을 0~1사이에 값에 두게끔 만든것 
-H(x) = Wx + b >> H(x) = 1/(1+e-WT승X) 결국 sigmoid 함수를 써준것
+H(x) = Wx + b >> H(x) = 1/(1+e-WT승X) 결국 sigmoid(logistic) 함수를 써준것
 
 그리고 cost 함수 Y* log(H(x)) + (1-Y) * log(1-H(x)) 가 핵심
 
