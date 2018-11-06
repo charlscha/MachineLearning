@@ -9,3 +9,24 @@ x->[  ] -> [  ] ->     Y예측{0~1}
      
 Multinomial classification
 #그림참고 Multinomial classification
+
+soft max 함수[시험성적 a~f 까지 분류할때사용]
+WX = y[2.0,1.0,0.1] -> p=[0.7,0.2,0.1] 이와 같이 0~1사이값으로 표현하고 y값의 합이 1이되게끔
+
+  2.0  S(y)  0.7   argmax   1.0    a
+y 1.0   ->   0.2    <->     0.0    b
+  0.1        0.1            0.0    c
+      softmax              one-hot encoding
+위와 같이 a 값이 나옴.
+
+Cost fuction : cross entropy
+
+cost = tf.reduce_mean(-tf.reduce_sum(Y*tf.log(hypothesis), axis=1))
+optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.1).minimize(cost)
+
+
+one-hot encoding
+y_data =[[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,1,0],[0,1,0],[1,0,0],[1,0,0]]
+y_data =    2       2       2       2       1       1       0        0      <<<<one-hot encoding 표현하면
+
+
