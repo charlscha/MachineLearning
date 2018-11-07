@@ -22,3 +22,8 @@ softmax_cross_entropy_with_logits
   
   # 1, 2 cost는 같은값
   
+  
+  
+# tf.argmax(data) : 값들중에 max를 찾는다. 확률중 최고값찾는것
+
+# data.flatten() : 평탄화한다 [[0],[1]] -> [0,1]
