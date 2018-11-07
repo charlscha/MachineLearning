@@ -1,0 +1,24 @@
+#복습
+
+tf.matmul(X,W) : logit or score 칭함 (XW=y)
+
+hypothesis = tf.nn.softmax(tf.matmul(X,W))
+
+score   --->  probabilities
+     softmax
+
+softmax_cross_entropy_with_logits
+
+  logits = tf.matmul(X, W) + b
+  hypothesis = tf.nn.softmz(logits)
+  
+  # 1 Cross entropy cost/loss
+  cost = tf.reduce_mean(-tf.reduce_sum(Y * tf.log(hypothesis), axis=1))
+                                        Y는 one hot
+  # 2 Cross entropy cost/loss
+  cost_i = tf.nn.softmax_cross_entropy_with_logits( logits=logits, labels=Y_one_hot)
+  cost = tf.reduce_mean(cost_i)
+  
+  
+  # 1, 2 cost는 같은값
+  
