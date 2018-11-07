@@ -1,0 +1,6 @@
+original Set
+|<---------------------------------------------------->|
+|             training                  |    testing   |
+|     training         |   validation   |    testing   |
+
+validation : rate , regularzation 을 통한 튜닝
