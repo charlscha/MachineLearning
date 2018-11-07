@@ -4,3 +4,4 @@ rate
 overfitting
 # training data 늘리거나 특징점에있는 데이터를 삭제
 # cost함수를 정규화 시키면됨
+# xy = MinMaxscaler(xy) 데이터정규화 이질적인 데이터가 있을경우 사용 매우 큰데이터가 있을경우
