@@ -6,3 +6,7 @@
     #특정 차원을 제거하고 합계
   reduce_mean
     #특정 차원을 제거하고 평균
+
+  accuracy.eval(session=sess, feed_dict={~~})
+  # sess.run() 과 같으나 보통 1개의 값을 실행시킬때 사용함
+  
