@@ -55,4 +55,16 @@ Axis Reduce mean
         tf.reduce_mean(x, axis=-1).eval()
      >>>array([1.5, 3.5], dtype=float32)
         
+Argmax
+
+        x=[[0,1,2],
+           [2,1,0]]
+        tf.arg_max(x, axis=0).eval()
+     >>>array[1,0,0]
+        tf.arg_max(x, axis=1).eval()
+     >>>array[2,0]
+        tf.arg_max(x, axis=-1).eval()
+     >>>array[2,0]
+        
+        
         
