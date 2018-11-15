@@ -32,5 +32,27 @@ shape는 rank 4일경우  ## 결국 아래 단계마다 갯수가 확인될때 [
 Axis 축 [ 갯수를 0부터 카운팅하면됨
         위의 경우는 [axis=0[axis=1[axis=2[axis=3]]]] 이와같음
 
-         
+Axis Reduce mean
+###결국
+###            
+               ----> axis=1
+        x=[ | [1.,2.],
+            | [3.,4.] ]
+            v
+           axis =0
+###
+        
+        tf.reduce_mean([1,2], axis=0).eval()
+     >>>1 #interger 이므로
+        x=[[1.,2.],
+           [3.,4.]]
+        tf.reduce_mean(x).eval()
+     >>>2.5
+        tf.reduce_mean(x, axis=0).eval()
+     >>>array([2., 3.], dtype=float32)
+        tf.reduce_mean(x, axis=1).eval()
+     >>>array([1.5, 3.5], dtype=float32)
+        tf.reduce_mean(x, axis=-1).eval()
+     >>>array([1.5, 3.5], dtype=float32)
+        
         
