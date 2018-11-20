@@ -1,0 +1,25 @@
+@@@@@@  Tensorboard
+    5 steps of using TensorBoard
+  
+  1.어떤텐서를 로깅할지를 정한다
+    w2_hist = tf.summary.histogram("weights2",W2)
+    cost_summ = tf.summary.scalar("cost",cost)
+    
+  2 한번에쓰기위해서 merge한다
+    summary = tf.summary.merge_all()
+  
+  3 파일위치를 정한다. 세션그래프를 넣어준다
+    writer =tf.summary.fileWriter('./logs')
+  
+  4 실행
+    s , _ = sess.run([summary, optimizer], feed_dict =feed_dict)
+    writer.add_summary(s, global_step = global_step)
+  
+  5 텐서보드 실행
+    
+    tensorboard --logdir = ./logs
+  
+  
+@@@@@@  tf.name_scope("layer1")
+  계층을 텐서보드 그래프로 표현할때 사용되는 개념 묶어주는 역할
+  
