@@ -4,4 +4,6 @@
 # g = wx
 # f를 g에 대해서 미분하고  다음에 g를 w에 대해서 미분하면 됨.
 # df/dw = df/dg * dg/dw
-#
+# 보다 deep , wide 구성할수록 정확도가 높아짐
+# Wide Deep Neural Net for XOR
+# 그래프를 deep , wide 할때 진행상황을 볼수있게끔 만들어주는 역할 Tensorboard
