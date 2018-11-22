@@ -1,0 +1,11 @@
+레이어들 일부를 쉬게함 마치 각분야 전문가 있어 그전문분야만 맡아서 하는것처럼
+학습할때만 드랍아웃한다.
+
+dropout_rate = tf.placeholoder("float")
+_L1 = tf.nn.relu(tf.add(tf.matmul(X,W1),B1))
+L1 = tf.nn.dropout(_L1, dropout_rate) # rate 는 0~1 퍼센트
+#실제 값을 실행시킬때는 1로 해야함.
+
+##
+데이터 셋을 여러개 나누고 러닝모델도 여러개 분류하여 학습후 추후에 combiner 합치고 Ensemble prediction 
+앙상블이다.
