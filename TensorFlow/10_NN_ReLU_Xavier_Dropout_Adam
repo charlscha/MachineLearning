@@ -1,0 +1,9 @@
+@@@@ 좀더 효율적으로 사용하는방법
+  1. Deep NN 깊고 넓게
+  2. Xavier
+  3. Dropout
+    keep_prob 비율조정 학습시 0.5~0.7 accuracy 반드시 1로 설정
+  4. Adam and other optimizers
+  
+  98% 까지 
+  
