@@ -1,3 +1,7 @@
+## graph
+  Input layer > Convolution layer1 > Pooling layer1 > Convoultion layer2 > Pooling layer2 > Fully-connected layer
+##
+
 
 convolution Layer : filter를 통해서 특징점을 추출한 레이어
                     > 인접한 pixel에convolution filter를 곱해서 얻어진값
@@ -14,7 +18,9 @@ Pooling : 샘플링한다. 즉 값중에 최고값이나 평균값을등을 가�
   ex) 4X4 >> 2X2 filters stride 2
       1 1 2 4                   
       5 6 7 8  >>>>>>>>>>>>  6 8
-      3 2 1 0  >>>>>>>>>>>>  3 4
+      3 2 1 0  >>>>>>>>>>>>  3 4           ...
       1 2 3 4 
+       img                  filter        conv
+
 아래에서 
 https://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html
