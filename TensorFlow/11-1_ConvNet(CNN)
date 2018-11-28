@@ -1,3 +1,6 @@
+# CNN 은 합성곱(Convolution) 연산을 사용하는 ANN의 한종류
+# 네트워크 구조 : 이전 계층의 모든 뉴런과 결한된 형태의 layer를 Fully-connected layer(FC layer 전결합 레이어) or Dense layer 라함
+
 ## graph
   Input layer > Convolution layer1 > Pooling layer1 > Convoultion layer2 > Pooling layer2 > Fully-connected layer
 ##
