@@ -1,1 +1,9 @@
 # Sequence data
+
+Recurrent Neural Network
+
+## RNN in TensorFlow 42강의
+
+cell = tf.contrib.rnn.BasicRNNCell(num_units=hidden_size) # num_units 출력 갯수
+outputs, _states =tf.nn.dynamic_rnn(cell, x_data, dtype=tf.float32)
+
