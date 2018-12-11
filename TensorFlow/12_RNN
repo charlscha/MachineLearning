@@ -5,5 +5,9 @@ Recurrent Neural Network
 ## RNN in TensorFlow 42강의
 
 cell = tf.contrib.rnn.BasicRNNCell(num_units=hidden_size) # num_units 출력 갯수
+# cell 노드를 뜻한다 하나의 layer
 outputs, _states =tf.nn.dynamic_rnn(cell, x_data, dtype=tf.float32)
+
+sequence_length
+# 입력 출력 시퀀스를 맞춰줘야함
 
