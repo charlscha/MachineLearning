@@ -11,3 +11,13 @@ outputs, _states =tf.nn.dynamic_rnn(cell, x_data, dtype=tf.float32)
 sequence_length
 # 입력 출력 시퀀스를 맞춰줘야함
 
+text: 'hihello'
+unique chars (vocabulary, voc) : h, i, e, l, o >> one-hot encoding size 가 된다.
+voc index : dic
+ h:0 , i:1 , e:2 , l:3 , o:4
+ 
+ # RNN parameters 
+ hidden_size # output from the LSTM
+ input_dim # one-hot size
+ batch_size #
+ sequence_length # 문자열 길이
