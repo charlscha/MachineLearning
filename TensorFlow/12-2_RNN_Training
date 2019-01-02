@@ -1,0 +1,8 @@
+1. dimension
+2. sequence
+3. hidden
+4. batch
+
+hidden_size=5, input_dim=5, batch_size=1, sequence_length=6
+
+위 네가지만 알면됨
