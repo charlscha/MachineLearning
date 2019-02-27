@@ -27,4 +27,56 @@ Gate는 (시그모이드를 이용해서) 0이 나오면 버리거나 삭제 또
 
 LSTM은 위와 같은 방식으로 과거의 정보들을 꾸준히 업데이트하여 장기 의존성을 해결했다.
 LSTM은 가중치를 곱셈으로 처리하지 않고 덧셈으로 처리하기 때문에 Gradient Vanishing 문제를 해결할 수 있었다.
+
+
+3. RNN 응용 모델들
+
+
+
+RNN 기본 모델의 단점들을 보완하기 위한 응용 모델들이 있다.
+
+LSTM도 RNN 응용 모델 중 하나다.
+
+
+
+Bidirectional RNN
+
+
+
+이미지 출처 : https://rlacksdid93.wixsite.com/930724/blog/outline-deep-learning-cnn-rnn
+
+
+
+
+양방향 RNN이다.
+
+이전 정보만 고려하는 것이 아니라 이후 정보까지 고려하는 것이 특징이다.
+
+전방향 상태 정보를 가지고 있는 은닉층과, 후방향 상태 정보를 가지고 있는 은닉층이 있다.
+
+전방향 은닉층과 후방향 은닉층에 Input 값을 거꾸로 집어놓고,
+
+출력층의 값은 두 방향의 은닉층에 모든 input 값이 계산된 후에 적용시키는 방식으로 학습한다.
+
+
+
+자세한 설명 : http://solarisailab.com/archives/1515
+
+
+Bidirectional Recurrent Neural Networks (BRNNs) 소개 – 양방향 Recurrent ...
+Bidirectional Recurrent Neural Networks (BRNNs) 소개 – 양방향 Recurrent Neural Networks(RNNs) 2017년 5월 28일 by Solaris ...
+solarisailab.com
+
+
+Deep (Bidirectional) RNN
+
+ 
+
+이미지 출처 : https://rlacksdid93.wixsite.com/930724/blog/outline-deep-learning-cnn-rnn
+
+
+
+바로 위에서 설명한 Bidirectional 학습을 더 깊게 한 모델이다.
+
+시간 스텝마다 여러 Layer가 있다. 학습데이터가 더 많이 필요한게 특징이다.
 [출처] 딥러닝 (DeepLearning) - 순환 인공 신경망 (RNN, LSTM)|작성자 하면한다
