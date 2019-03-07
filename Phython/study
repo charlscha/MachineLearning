@@ -1,0 +1,49 @@
+#문자열자르기
+>>> split_jusik = my_jusik.split(' ')
+>>> split_jusik
+['naver', 'daum']
+>>> print(split_jusik[0])
+
+#리스트 인덱싱
+               0     1     2     3     4    5
+>>> daishin = [ 9130, 9150, 9150, 9300, 9400 ]
+              -5    -4    -3    -2    -1
+              
+>>> daishin[a:b] a 시작위치 b 종료위치 갯수 b-a 만약 b가 음수이면 a+b
+
+#리스트삽입
+>>> kospi_top10.append('SK텔레콤') #제일끝
+>>> kospi_top10.insert(3, 'SK 텔레콤')
+#리스트 삭제
+>>> del kospi_top10[-1]
+
+#튜플
+튜플은 리스트보다 속도가 빠르다는 장점
+
+>>> t = ('Samsung', 'LG', 'SK')
+>>> t
+('Samsung', 'LG', 'SK')
+>>> 
+
+#리스트[] 튜플() 딕셔너리{}
+
+#딕셔너리
+>>> cur_price ={}
+>>> cur_price['daeshin']=3000
+>>> cur_price['daum kakao']=8000
+>>> cur_price
+{'daeshin': 3000, 'daum kakao': 8000}
+>>> cur_price['daum kakao']
+8000
+>>> del cur_price['daeshin']
+
+>>> cur_price = {'Daum KAKAO': 80000, 'naver':800000, 'daeshin':30000}
+
+>>> cur_price.keys()
+dict_keys(['daeshin', 'daum kakao'])
+>>> list(cur_price.keys())
+['daeshin', 'daum kakao']
+
+>>> 'daeshin' in cur_price.keys()
+True
+>>> 
