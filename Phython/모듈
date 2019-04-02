@@ -30,3 +30,10 @@
 >>>
 
 # os.listdir()
+
+임폴트 3가지
+# from os import listdir 
+ 'from os import listdir' 구문의 의미는 “os 모듈로부터(from) listdir을 임포트하라
+# import os
+# import os as ios 
+ 별칭을 줄수있음
