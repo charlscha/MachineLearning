@@ -14,3 +14,19 @@
 <class 'str'>
 >>>
 
+# dir(모듈)
+ 모듈 안에 어떤 함수나 변수가 있는지 어떻게 확인할 수 있을까요? 가장 간단한 방법은 다음과 같이 dir 함수를 사용
+ 
+>>> import time
+>>> dir(time)
+['_STRUCT_TM_ITEMS', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'altzone', 'asctime', 'clock', 'ctime', 'daylight', 'get_clock_info', 'gmtime', 'localtime', 'mktime', 'monotonic', 'perf_counter', 'process_time', 'sleep', 'strftime', 'strptime', 'struct_time', 'time', 'timezone', 'tzname']
+>>>
+
+# getcwd 함수로 현재 경로를 얻을 수 있다
+
+>>> import os
+>>> os.getcwd()
+'C:\\Anaconda3\\Lib\\idlelib'
+>>>
+
+# os.listdir()
