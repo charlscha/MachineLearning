@@ -1,0 +1,9 @@
+# 클래스 내부에 정의된 함수인 메서드의 첫 번째 인자는 반드시 self 이어야 함
+
+
+>>> class BusinessCard:
+	def set_info(self, name, email, addr):
+		self.name = name
+		self.email = email
+		self.addr = addr
+
