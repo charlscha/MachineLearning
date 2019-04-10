@@ -1,0 +1,12 @@
+# Component Object Model이라는 용어가 의미하듯이 여러 컴포넌트 객체를 이용해 프로그램을 개발하는 모델을 의미
+
+
+
+import win32com.client
+
+excel = win32com.client.Dispatch("Excel.Application")
+excel.Visible = True
+wb = excel.Workbooks.Open('C:\\Users\\Jason\\Desktop\\input.xlsx')
+ws = wb.ActiveSheet
+print(ws.Cells(1,1).Value)
+excel.Quit()
