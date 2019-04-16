@@ -14,7 +14,7 @@ if "DISPLAY" not in os.environ:
 
 import matplotlib.pyplot as plt
 
-
+## 들쑥날쑥한 데이터를 노멀라이즈한다 함수로 정의함
 def MinMaxScaler(data):
     ''' Min Max Normalization
     Parameters
@@ -59,7 +59,8 @@ test_set = xy[train_size - seq_length:]  # Index from [train_size - seq_length] 
 train_set = MinMaxScaler(train_set)
 test_set = MinMaxScaler(test_set)
 
-# build datasets
+# build datasets 
+# 데이터를 벡터화 한다 여기서 1~6행의 데이터를 x로 7행의 마지막 열의 데이터를 y로 정의한다
 def build_dataset(time_series, seq_length):
     dataX = []
     dataY = []
@@ -76,14 +77,15 @@ testX, testY = build_dataset(test_set, seq_length)
 
 # input place holders
 X = tf.placeholder(tf.float32, [None, seq_length, data_dim])
-Y = tf.placeholder(tf.float32, [None, 1])
+Y = tf.placeholder(tf.float32, [None, 1]) #여기서는 마지막 디멘션 1개만 필요하므로 1이들어감
 
 # build a LSTM network
 cell = tf.contrib.rnn.BasicLSTMCell(
     num_units=hidden_dim, state_is_tuple=True, activation=tf.tanh)
 outputs, _states = tf.nn.dynamic_rnn(cell, X, dtype=tf.float32)
 Y_pred = tf.contrib.layers.fully_connected(
-    outputs[:, -1], output_dim, activation_fn=None)  # We use the last cell's output ####FC 마지막 1개만 쓰겠다
+    outputs[:, -1], output_dim, activation_fn=None)  # We use the last cell's output 
+    ####FC 마지막 1개만 쓰겠다 >> [:, -1] 시퀀스 7개중에서 마지막 시퀀스 것이 사용되므로
 
 # cost/loss
 loss = tf.reduce_sum(tf.square(Y_pred - Y))  # sum of the squares
